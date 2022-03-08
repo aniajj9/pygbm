@@ -6,7 +6,8 @@
   into the newly created left and right childs.
 """
 import numpy as np
-from numba import njit, jitclass, prange, float32, uint8, uint32
+from numba import njit, prange, float32, uint8, uint32
+from numba.experimental import jitclass
 import numba
 
 from .histogram import _build_histogram
