@@ -169,7 +169,7 @@ class SplittingContext:
         self.right_indices_buffer = np.empty_like(self.partition)
 
 
-@njit(parallel=True,
+@njit(parallel=False,
       locals={'sample_idx': uint32,
               'left_count': uint32,
               'right_count': uint32})
