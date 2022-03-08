@@ -77,7 +77,7 @@ class BaseGradientBoostingMachine(BaseEstimator, ABC):
                     f'pre-binned with {max_bin_index + 1} bins.'
                 )
 
-    def fit(self, X, y):
+    def fit_model(self, X, y):
         """Fit the gradient boosting model.
 
         Parameters
